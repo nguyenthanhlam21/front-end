@@ -1,6 +1,6 @@
 import { ObjectId } from "mongoose";
 
-export type Order {
+export type Order = {
     user: ObjectId;          
     orderCode: string;      
     orderItems: { 
