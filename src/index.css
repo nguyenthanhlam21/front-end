@@ -1,0 +1,63 @@
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+} */
+
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-prev-arrow,.custom-prev-next{
+  display:none !important;
+}
+
+.custom-prev-arrow,
+.custom-next-arrow { 
+  display: none !important;
+}
+
+.by{
+  border-bottom: 2.4px solid #FF6633 ;
+}
+
+.slick-prev, .slick-next {
+  color: black; 
+  border: none;
+  border-radius: 50%; 
+  width: 40px; 
+  height: 40px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; 
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px; 
+}
+
+
+.slick-prev:before, .slick-next:before {
+  color: black; 
+  font-size: 40px; 
+}
+
+.slick-prev, .slick-next {
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+}
+
+.slider-container:hover .slick-prev,
+.slider-container:hover .slick-next {
+  opacity: 1; 
+}
+
+
